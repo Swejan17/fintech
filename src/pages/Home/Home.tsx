@@ -2,9 +2,12 @@ import React from 'react';
 import sunIcon from '../../assets/images/sun1.png';
 import heartIcon from "../../assets/images/heart.png"
 import "./Home.css"
+import Footter from '../../components/Footter';
+
 
 const Home: React.FC = () => {
   return (
+    <div>
     <div className="dashboard">
       {/* Header Section */}
       <header className="header">
@@ -62,6 +65,8 @@ const Home: React.FC = () => {
         </section>
       </div>
 
+    </div>
+      <Footter/>
     </div>
   );
 };

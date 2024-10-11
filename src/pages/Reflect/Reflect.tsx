@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Reflect.css'; // Import CSS file for styling (adjust based on your project)
 import sunIcon from "../../assets/images/sun1.png"
 import micIcon from "../../assets/images/mic.png"
+import Footter from '../../components/Footter';
 
 const Reflect = () => {
   // State to handle input and conversation
@@ -30,6 +31,7 @@ const Reflect = () => {
   };
 
   return (
+    <div>
     <div className="reflect-container">
       {/* Header */}
       <header className="reflect-header">
@@ -83,6 +85,8 @@ const Reflect = () => {
         </div>
       </main>
 
+    </div>
+    <Footter/>
     </div>
   );
 };

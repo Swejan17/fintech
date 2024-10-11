@@ -2,9 +2,11 @@ import React from 'react';
 import './Learn.css'; // We'll write custom CSS for styling.
 import sunIcon from "../../assets/images/sun2.png"
 import starIcon from "../../assets/images/star.png"
+import Footter from '../../components/Footter';
 
 const Learn: React.FC = () => {
   return (
+    <div>
     <div className="learn-page">
       <header className="header">
         <h1>Financial & Mental Wellbeing Hub</h1>
@@ -63,6 +65,8 @@ const Learn: React.FC = () => {
       </section>
     </div>
 
+    </div>
+    <Footter/>
     </div>
   );
 };

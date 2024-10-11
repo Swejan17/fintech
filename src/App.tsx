@@ -8,11 +8,12 @@ import Landing from './pages/Landing/Landing';
 import Starting from './pages/Starting/Starting';
 
 
+
 // Placeholder components for the new pages
 const ProfilePage = () => <div>Profile Page</div>;
 const SettingsPage = () => <div>Settings Page</div>;
 
-export const NavigationButtons = () => {
+const NavigationButtons = () => {
   const navigate = useNavigate();
 
   return (
@@ -37,6 +38,7 @@ const App: React.FC = () => {
              
           <div className="content">
             <Routes>
+              
               <Route path="/" element={<Starting />} />
               <Route path="/landing"  element={<Landing />} />
               <Route path="/Home" element={<Home />} />
@@ -47,7 +49,7 @@ const App: React.FC = () => {
           </div>
         </div>
         {/* Navigation buttons at the bottom */}
-        <NavigationButtons />
+        {/* <NavigationButtons /> */}
       </div>
     </Router>
   );

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #ffffff, #ffffff, #ffffff);
+  background: linear-gradient(to bottom right, #e0f2fe, #ffffff, #fce7f3);
   padding: 1rem;
   animation: gradient-x 15s ease infinite;
 }
@@ -22,6 +22,7 @@
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .mood-tracker-header {
@@ -141,4 +142,46 @@ h1 {
 .confirm-button.disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.skip-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.skip-button:hover {
+  color: #374151;
+}
+
+.share-input-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.share-input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem 0 0 0.375rem;
+  font-size: 0.875rem;
+}
+
+.voice-button {
+  padding: 0.5rem 1rem;
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 0 0.375rem 0.375rem 0;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.voice-button:hover {
+  background-color: #111827;
 }
