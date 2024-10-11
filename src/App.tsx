@@ -4,12 +4,15 @@ import Home from './pages/Home/Home';
 import LearningPage from './pages/Learn/Learn';
 import ReflectPage from './pages/Reflect/Reflect';
 import './App.css';
+import Landing from './pages/Landing/Landing';
+import Starting from './pages/Starting/Starting';
+
 
 // Placeholder components for the new pages
 const ProfilePage = () => <div>Profile Page</div>;
 const SettingsPage = () => <div>Settings Page</div>;
 
-const NavigationButtons = () => {
+export const NavigationButtons = () => {
   const navigate = useNavigate();
 
   return (
@@ -25,13 +28,17 @@ const NavigationButtons = () => {
 };
 
 const App: React.FC = () => {
+  
   return (
     <Router>
       <div className="app-container" style={{position:"relative"}}>
         <div className="dashboard" >
-        <img src="/Mind_Your_Finance_Clear_Background.png" style={{width:"300px"  ,position:"absolute",left:"20px", top:"250px" } } />
+          
+             
           <div className="content">
             <Routes>
+              <Route path="/" element={<Starting />} />
+              <Route path="/landing"  element={<Landing />} />
               <Route path="/Home" element={<Home />} />
               <Route path="/learn" element={<LearningPage />} />
               <Route path="/reflect" element={<ReflectPage />} />

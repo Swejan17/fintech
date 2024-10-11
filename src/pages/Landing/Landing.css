@@ -1,0 +1,144 @@
+.mood-tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #ffffff, #ffffff, #ffffff);
+  padding: 1rem;
+  animation: gradient-x 15s ease infinite;
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.mood-tracker-container {
+  width: 100%;
+  max-width: 28rem;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mood-tracker-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sun {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 1rem;
+  transition: all 1s;
+}
+
+.sun.glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(253, 184, 19, 0.7)); }
+  50% { filter: drop-shadow(0 0 20px rgba(253, 184, 19, 0.9)); }
+}
+
+.blink {
+  animation: blink 0.2s ease-in-out;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.mood-slider-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.mood-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.5rem;
+  background: #e5e7eb;
+  outline: none;
+  border-radius: 0.25rem;
+}
+
+.mood-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #3b82f6;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.mood-slider::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #3b82f6;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.emoji-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.emoji {
+  font-size: 1.5rem;
+  transition: opacity 0.2s;
+  opacity: 0.3;
+}
+
+.emoji.active {
+  opacity: 1;
+}
+
+.confirm-button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.confirm-button:hover:not(.disabled) {
+  background-color: #2563eb;
+}
+
+.confirm-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+.confirm-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
