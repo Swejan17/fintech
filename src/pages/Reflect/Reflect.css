@@ -1,0 +1,102 @@
+.reflect-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .reflect-header {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  
+  .reflect-main {
+    text-align: center;
+  }
+  
+  .sunny-icon img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .input-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .input-section input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+    margin-right: 10px;
+  }
+  
+  .input-section button img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .conversation-box {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .tips-section {
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tips ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tips ul li {
+    margin: 5px 0;
+  }
+  
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #333;
+  }
+  
+  .bottom-nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .bottom-nav button.active {
+    background-color: #000;
+  }
+  
+  .bottom-nav button:hover {
+    background-color: #222;
+  }
+  

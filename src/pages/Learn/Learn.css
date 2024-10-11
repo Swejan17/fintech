@@ -1,0 +1,160 @@
+.learn-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-initials {
+    font-weight: bold;
+  }
+  
+  .sun-section .sun-icon {
+    width: 80px;
+    height: auto;
+    margin: 20px auto;
+  }
+  
+  .category-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .category-button {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .category-button:hover {
+    background-color: #333;
+  }
+  
+  .search-section {
+    margin: 20px 0;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .topics-section {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .topics-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .topic-subtitle {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .topic-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  .topic-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .topic-list li:hover {
+    text-decoration: underline;
+  }
+  
+  .learning-path-section {
+    margin-top: 30px;
+  }
+  
+  .learning-path-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .learning-path {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .path-step {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1a1a;
+    position: relative;
+  }
+  
+  .path-step::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 5px);
+  }
+  
+  .path-step:last-child::after {
+    display: none;
+  }
+  
+  .footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #1a1a1a;
+  }
+  
+  .nav-button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .nav-button.active {
+    background-color: #555;
+  }
+  
