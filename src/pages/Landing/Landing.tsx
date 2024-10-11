@@ -81,7 +81,7 @@ export default function Landing() {
             <button className="voice-button" onClick={handleVoice}>Voice</button>
           </div>
           <button 
-            onClick={handleShare} 
+            onClick={()=>navigate("/Home")} 
             className="confirm-button"
           >
             Share
