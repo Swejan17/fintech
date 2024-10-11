@@ -30,7 +30,7 @@ const App: React.FC = () => {
           {/* Main content area */}
           <div className="content">
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/learn" element={<LearningPage />} />
               <Route path="/reflect" element={<ReflectPage />} />
               <Route path="/settings" element={<SettingsPage />} />
