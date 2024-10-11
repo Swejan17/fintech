@@ -13,24 +13,26 @@ const NavigationButtons = () => {
   const navigate = useNavigate();
 
   return (
-    <footer className="footer-nav">
-      <button className="nav-button" onClick={() => navigate('/home')}>Home</button>
-      <button className="nav-button" onClick={() => navigate('/learn')}>Learn</button>
-      <button className="nav-button" onClick={() => navigate('/reflect')}>Reflect</button>
-      <button className="nav-button" onClick={() => navigate('/settings')}>Settings</button>
-    </footer>
+    <div className='dashboard'>
+      <footer className="footer-nav">
+        <button className="nav-button" onClick={() => navigate('/home')}>Home</button>
+        <button className="nav-button" onClick={() => navigate('/learn')}>Learn</button>
+        <button className="nav-button" onClick={() => navigate('/reflect')}>Reflect</button>
+        <button className="nav-button" onClick={() => navigate('/settings')}>Settings</button>
+      </footer>
+    </div>
   );
 };
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="app-container">
-        <div className="dashboard">
-          {/* Main content area */}
+      <div className="app-container" style={{position:"relative"}}>
+        <div className="dashboard" >
+        <img src="/Mind_Your_Finance_Clear_Background.png" style={{width:"300px"  ,position:"absolute",left:"20px", top:"250px" } } />
           <div className="content">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/Home" element={<Home />} />
               <Route path="/learn" element={<LearningPage />} />
               <Route path="/reflect" element={<ReflectPage />} />
               <Route path="/settings" element={<SettingsPage />} />
